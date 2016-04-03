@@ -1,4 +1,4 @@
-package in.ishankhanna.salesconverter;
+package in.ishankhanna.salesconverter.ui.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
+
+import in.ishankhanna.salesconverter.R;
 
 /**
  * Created by ishan on 03/04/16.
@@ -19,9 +19,9 @@ public class ProductListAdapter extends BaseAdapter {
     private List<String> productNames;
     private Map<String,Integer> productTransactionCountMap;
     private LayoutInflater layoutInflater;
-    public ProductListAdapter(Context context, Set<String> productNames, Map<String,Integer> productTransactionCountMap) {
+    public ProductListAdapter(Context context, List productNames, Map<String,Integer> productTransactionCountMap) {
         layoutInflater = LayoutInflater.from(context);
-        this.productNames = new ArrayList<>(productNames);
+        this.productNames = productNames;
         this.productTransactionCountMap = productTransactionCountMap;
     }
 

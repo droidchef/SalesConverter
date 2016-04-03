@@ -7,12 +7,21 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".ui.activities.ProductsActivity">
+    tools:context="in.ishankhanna.salesconverter.ui.activities.TransactionsActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_total_value_in_gbp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Total : ¢242343"
+        android:textColor="@android:color/white"
+        android:padding="4dp"/>
 
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/lv_products"
-        android:layout_centerInParent="true"/>
-
+        android:id="@+id/lv_transactions"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_total_value_in_gbp"/>
 </RelativeLayout>

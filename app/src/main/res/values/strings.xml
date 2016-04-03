@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">SalesConverter</string>
     <string name="products">Products</string>
+    <string name="value">%1$s %2$s</string>
+    <string name="value_in_gbp">£ %1$s</string>
+    <string name="total_value_in_gbp">Total : £ %1$s</string>
+    <string name="title_transactions">Transactions for %1$s</string>
 </resources>
